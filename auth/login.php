@@ -32,7 +32,7 @@ $token    = $_REQUEST['token'];
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyAadzybe3l6sXaFI3-CdUtQ2Ca0EDy1VVE&idToken=" . $token,
+    CURLOPT_URL => "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=YOUR_WEB_KEY&idToken=" . $token,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => "",
     CURLOPT_MAXREDIRS => 10,
